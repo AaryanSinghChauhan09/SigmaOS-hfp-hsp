@@ -3,7 +3,7 @@ name = "SigmaOS-hfp-hsp"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "hfp-hsp component"
+description = "HFP/HSP"
 upstream = []
 
 [contract]
