@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-hfp-hsp Component Wiki
+# SigmaOS-hfp-hsp Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-hfp-hsp provides HFP/HSP for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-hfp-hsp provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-hfp-hsp Abstraction
-- Fail-Fast on SigmaOS-hfp-hsp Initialization Errors
-- Deterministic SigmaOS-hfp-hsp Setup
-- Clear Abstraction Over SigmaOS-hfp-hsp APIs
-- Composition over Inheritance for SigmaOS-hfp-hsp extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-hfp-hsp Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-hfp-hsp Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-hfp-hsp Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-hfp-hsp APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-hfp-hsp extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-hfp-hsp follows a SigmaOS-hfp-hsp pattern:
+SigmaOS-hfp-hsp follows a SigmaOS-hfp-hsp pattern:
 - **SigmaOS-hfp-hsp Core**: Provides SigmaOS-hfp-hsp support, SigmaOS-hfp-hsp management, and SigmaOS-hfp-hsp tracking
 - **Management**: Supports SigmaOS-hfp-hsp management, SigmaOS-hfp-hsp configuration, and SigmaOS-hfp-hsp lifecycle
 - **Tracking**: Supports SigmaOS-hfp-hsp status, SigmaOS-hfp-hsp tracking, and SigmaOS-hfp-hsp lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-hfp-hsp follows a SigmaOS-hfp-hsp pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-hfp-hsp by given configuration
--  - Register a SigmaOS-hfp-hsp by given name
--  - Get SigmaOS-hfp-hsp status and SigmaOS-hfp-hsp availability
--  - Track SigmaOS-hfp-hsp management and SigmaOS-hfp-hsp tracking
+- Manage a SigmaOS-hfp-hsp by given configuration
+- Register a SigmaOS-hfp-hsp by given name
+- Get SigmaOS-hfp-hsp status and SigmaOS-hfp-hsp availability
+- Track SigmaOS-hfp-hsp management and SigmaOS-hfp-hsp tracking
 - Error types for SigmaOS-hfp-hsp failure scenarios or unsupported SigmaOS-hfp-hsp types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-hfp-hsp init, SigmaOS-hfp-hsp management)
 3. **Assert**: Verify the expected SigmaOS-hfp-hsp results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-hfp-hsp initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-hfp-hsp failure scenarios
 - Unit tests provided for SigmaOS-hfp-hsp management and configuration
